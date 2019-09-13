@@ -6,15 +6,7 @@ public class ContaCorrente {
 	
 	public ContaCorrente () {
 	
-	}
-	
-	public void invertido(int numero) {
-		
-	}
-	
-	public void multiplicaSoma(int numero) {
-		
-	}
+	}	
 	
 	public int verificador(int numero) {		
 
@@ -29,24 +21,8 @@ public class ContaCorrente {
 		
 		int passo3 = (passo2 % 10);
 		
-		return passo3;	
+		return passo3;			
 		
-		/*
-		int invertido = 0;
-		while(numero > 0) {
-			invertido *=  10; 
-			invertido += (numero % 10); 
-			numero /= 10;
-		 
-		int passo2 = 0;
-		String valorString = Integer.toString(passo1);
-		for(int i = 0; i < valorString.length(); i++) {
-			
-			int multi = (Character.getNumericValue((valorString.charAt(i))) * (i+1));			
-			passo2 += multi;	
-			
-		int passo3 = (passo2%10);
-		}*/
 	}
 
 	public int getNumero() {
