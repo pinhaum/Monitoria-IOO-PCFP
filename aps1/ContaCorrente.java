@@ -10,19 +10,18 @@ public class ContaCorrente {
 	
 	public int verificador(int numero) {		
 
-		int centena = numero/100;
-		int dezena = (numero%100)/10;
-		int unidade = (numero%100)%10;
-		int invertido = (unidade*100) + (dezena*10) + centena;	
-					
-		int passo1 = numero + invertido;		
-
-		int passo2 = (passo1/100 * 1) + ((passo1%100)/10 *2) + ((passo1%100)%10 *3);
+		int centena = numero / 100;
+		int dezena = (numero % 100) / 10;
+		int unidade = numero % 10;
+		int invertido = (unidade * 100) + (dezena * 10) + centena;
+				
+		int  verificador = this.numero + invertido;	
 		
-		int passo3 = (passo2 % 10);
+		verificador = (verificador / 100 ) * 1 + ((verificador % 100) / 10) * 2 + (verificador % 10) * 3;
 		
-		return passo3;			
+		verificador %= 10;		
 		
+		return verificador;
 	}
 
 	public int getNumero() {
