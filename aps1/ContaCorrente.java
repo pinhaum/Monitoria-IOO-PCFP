@@ -3,7 +3,6 @@ package aps1;
 public class ContaCorrente {
 	public int numero;
 	
-	
 	public ContaCorrente () {
 	
 	}	
